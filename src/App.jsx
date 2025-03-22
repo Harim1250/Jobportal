@@ -8,7 +8,7 @@ import Myjobs from "./Pages/Myjob";
 import PostJob from "./Pages/Postjob";
 // import Savejobs from "./Pages/Savejobs";
 import ProtectedRoute from "./components/ProtectedRoutes";
-import Joblisting from "./Pages/Joblisting";
+import Joblisting from "./Pages/JobListing";
 import JobPage from "./Pages/Jobs";
 import Savejobs from "./Pages/Savejobs";
 

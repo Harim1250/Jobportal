@@ -209,7 +209,7 @@ import {
 
 import { State } from "country-state-city";
 
-const JobListing = () => {
+const Joblisting = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [location, setLocation] = useState("");
   const [company_id, setCompany_id] = useState("");
@@ -350,4 +350,4 @@ const JobListing = () => {
   );
  };
 
-export default JobListing;
+export default Joblisting;

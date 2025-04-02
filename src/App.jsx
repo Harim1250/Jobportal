@@ -4,17 +4,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import Onboarding from "./Pages/Onboarding";
 import Myjobs from "./Pages/Myjob";
-// import JobsPage from "./Pages/Jobs";
-import PostJob from "./Pages/Postjob";
-// import Savejobs from "./Pages/Savejobs";
 import ProtectedRoute from "./components/ProtectedRoutes";
 import JobListing from "./Pages/JobListing";
 import JobPage from "./Pages/Jobs";
 import Savejobs from "./Pages/Savejobs";
+import PostJob from "./Pages/Postjob";
 
 const router = createBrowserRouter([
   {
-    element: <Applayout/>,
+    element: <Applayout />,
     children: [
       {
         path: "/",
@@ -24,68 +22,56 @@ const router = createBrowserRouter([
         path: "/onboarding",
         element: (
           <ProtectedRoute>
-            <Onboarding />,
+            <Onboarding />
           </ProtectedRoute>
-        )
+        ),
       },
-
       {
         path: "/jobs",
         element: (
           <ProtectedRoute>
-            <JobListing />,
+            <JobListing />
           </ProtectedRoute>
-        )
-       
+        ),
       },
-
       {
         path: "/myjobs",
         element: (
           <ProtectedRoute>
-          <Myjobs/>,
+            <Myjobs />
           </ProtectedRoute>
-        )
-        
-      },
-
-      {
-        path: "/job/:id", 
-        element: (
-          <ProtectedRoute>
-            <JobPage/>,
-          </ProtectedRoute>
-        )
-        
+        ),
       },
       {
-        path: "/postjobs",
+        path: "/job/:id",
         element: (
           <ProtectedRoute>
-            <PostJob />,
+            <JobPage />
           </ProtectedRoute>
-        )
-        
+        ),
+      },
+      {
+        path: "/postjobs", // ✅ Corrected path (previously might not match "/PostJob")
+        element: (
+          <ProtectedRoute>
+            <PostJob/>
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/savejobs",
         element: (
           <ProtectedRoute>
-            <Savejobs/>,
+            <Savejobs />
           </ProtectedRoute>
-        )
-        
+        ),
       },
     ],
   },
 ]);
 
 function App() {
-  return (
-
-  <RouterProvider router={router} />
-    
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

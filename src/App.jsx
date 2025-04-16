@@ -8,7 +8,8 @@ import ProtectedRoute from "./components/ProtectedRoutes";
 import JobListing from "./Pages/JobListing";
 import JobPage from "./Pages/Jobs";
 import Savejobs from "./Pages/Savejobs";
-import PostJob from "./Pages/Postjob";
+import PostJob from "./Pages/PostJob";
+// import PostJob from "./Pages/Postjob";
 
 const router = createBrowserRouter([
   {

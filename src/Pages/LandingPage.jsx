@@ -4,11 +4,13 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+// import Autoplay from "embla-carousel-autoplay";
 import Autoplay from "embla-carousel-autoplay";
-import Carousel from "embla-carousel-react";
+import { Carousel } from "@/components/ui/carousel";
 import companies from "../data/Companies.json";
 import faqs from "../data/faq.json";
 import {
+  
   Accordion,
   AccordionContent,
   AccordionItem,
